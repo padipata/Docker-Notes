@@ -15,10 +15,10 @@ Docker 的主要用途，目前有三大类。
 > mac版下载地址：https://download.docker.com/mac/beta/Docker.dmg
 
 ### 检查Docker，Docker Compose和Docker Machine的版本
-```docker
-$ docker --version
-$ docker-compose --version
-$ docker-machine --version
+```shell
+docker --version
+docker-compose --version
+docker-machine --version
 ```
 
 ### 基础命令
@@ -57,10 +57,10 @@ $ docker-machine --version
 ![62383258.png](README_files/62383258.png)
 ![62459926.png](README_files/62459926.png)
 
-
+*** 网易加速：http://hub-mirror.c.163.com ***
 ## 入门
 ### 下载镜像并进入
-```docker
+```shell
 #搜索镜像
 docker search centos
 
@@ -77,7 +77,7 @@ exit
 ```
 
 ### 运行一个web应用
-```docker
+```shell
 #将容器内部的 80 端口映射到本地主机的 5000 端口上。
 docker run -d -p 5000:80 nginx
 -p : 是容器内部端口绑定到指定的主机端口。
@@ -104,7 +104,7 @@ docker rm {name}
 
 `vim Dockerfile`
 
-### Dockerfile内容：
+> Dockerfile内容：
 
 ```docker
 #使用Nginx
@@ -187,3 +187,4 @@ server {
 ### 访问
 
 http://localhost:9000
+
