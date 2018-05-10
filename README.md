@@ -13,6 +13,19 @@ Docker 的主要用途，目前有三大类。
 ## 起步
 
 > mac版下载地址：https://download.docker.com/mac/beta/Docker.dmg
+> 
+> CentOS7:
+
+```shell
+yum install docker
+
+#安装过程中报错,解决办法: $yum install libdevmapper* -y
+#再次运行: yum install docker
+
+service docker start 
+
+docker ps
+```
 
 ### 检查Docker，Docker Compose和Docker Machine的版本
 ```shell
